@@ -24,7 +24,7 @@ function Movies({
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=99177e48b0799c9459d8fd1c705827f5&language=en-US&page=${pageNo}`
+        `https://api.themoviedb.org/3/movie/popular?api_key=&language=en-US&page=${pageNo}`
       )
       .then((res) => {
         setMovies(res.data.results);
